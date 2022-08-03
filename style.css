@@ -1,0 +1,25 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+h1 {
+  text-align: center;
+}
+.isimler {
+  display: inline-block;
+  margin-left: 10px;
+  margin-right: 10px;
+  width: 170px;
+}
+.ikinci {
+  display: inline-block;
+  margin-left: 10px;
+  margin-right: 10px;
+  width: 170px;
+}
+#metin {
+  width: 375px;
+}
+.submit {
+  width: 100px;
+  margin-top: 5px;
+}

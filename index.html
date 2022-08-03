@@ -5,9 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Form Çalışması</title>
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <h1 class="baslik1">Tasarım Porgramı Sözleşmesi</h1>
+    <h1 class="baslik1">Tasarım Programı Sözleşmesi</h1>
     <div>
       <form action="result.html">
         <fieldset>
@@ -31,7 +32,7 @@
         <fieldset>
           <legend>Kişisel Bilgiler</legend>
           <div class="col">
-            <label for="ad">Adınız</label>
+            <label for="ad" class="isimler">Adınız</label>
             <input
               type="text"
               class="form-control"
@@ -41,7 +42,7 @@
             />
           </div>
           <div class="col">
-            <label for="soyad">Soyadınız</label>
+            <label for="soyad" class="isimler">Soyadınız</label>
             <input
               type="text"
               class="form-control"
@@ -51,7 +52,7 @@
             />
           </div>
           <div class="col">
-            <label for="yas">Yaşınız</label>
+            <label for="yas" class="isimler">Yaşınız</label>
             <input
               type="number"
               class="form-control"
@@ -61,7 +62,7 @@
             />
           </div>
           <div class="col">
-            <label for="email">E mail iniz</label>
+            <label for="email" class="isimler">E mail iniz</label>
             <input
               type="email"
               class="form-control"
@@ -71,7 +72,7 @@
             />
           </div>
           <div class="col">
-            <label for="dosya">Soyadınız</label>
+            <label for="dosya" class="isimler">Dosya Seçimi</label>
             <input type="file"" class="form-control" placeholder="Dosya"
             aria-label="Last name" id="dosya" />
           </div>
@@ -79,7 +80,7 @@
         <fieldset>
           <legend>Diğer Bilgiler</legend>
           <div class="col">
-            <label for="tarih">Sektöre Giriş Tarihiniz</label> <br />
+            <label for="tarih" class="ikinci">Sektöre Giriş Tarihiniz</label>
             <input
               type="date"
               class="form-control"
@@ -88,7 +89,7 @@
               id="tarih"
             />
           </div>
-          <label for="giris">Sektöre Giriş Tarihiniz:</label>
+          <label for="giris" class="ikinci">Tecrübeniz:</label>
 
           <div class="form-check">
             <input
@@ -137,7 +138,7 @@
               16-20 Yıl
             </label>
           </div>
-          <label for="dil">Programlama Dilleri: </label>
+          <label for="dil" class="ikinci">Programlama Dilleri: </label>
           <select class="form-select" aria-label="Default select example">
             <option selected>Programlama Dili Seçin</option>
             <option value="PHP">PHP</option>
@@ -175,7 +176,7 @@ Lorem, ipsum dolor sit amet consectetur adipisicing elit. Expedita necessitatibu
           </label>
         </fieldset>
 
-        <input type="submit" value="Gönder" />
+        <input type="submit" value="Gönder" class="submit" />
       </form>
     </div>
   </body>
