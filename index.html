@@ -4,9 +4,179 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Form Çalışması</title>
   </head>
   <body>
-    <div></div>
+    <h1 class="baslik1">Tasarım Porgramı Sözleşmesi</h1>
+    <div>
+      <form action="result.html">
+        <fieldset>
+          <legend>Sözleşme Onayı</legend>
+          <div class="form-check">
+            <input
+              class="form-check-input"
+              type="checkbox"
+              value=""
+              id="flexCheckDefault"
+            />
+            <label class="form-check-label" for="flexCheckDefault">
+              Aşağıdaki Bilgilerin Doğruluğunu Kabul Ediyorum ve Sözleşmeyi
+              Onaylıyorum
+            </label>
+            <br />
+            <input type="submit" value="Formu Kaydet" />
+            <input type="reset" value="Formu Temizle" />
+          </div>
+        </fieldset>
+        <fieldset>
+          <legend>Kişisel Bilgiler</legend>
+          <div class="col">
+            <label for="ad">Adınız</label>
+            <input
+              type="text"
+              class="form-control"
+              placeholder="First name"
+              aria-label="First name"
+              id="ad"
+            />
+          </div>
+          <div class="col">
+            <label for="soyad">Soyadınız</label>
+            <input
+              type="text"
+              class="form-control"
+              placeholder="Last name"
+              aria-label="Last name"
+              id="soyad"
+            />
+          </div>
+          <div class="col">
+            <label for="yas">Yaşınız</label>
+            <input
+              type="number"
+              class="form-control"
+              placeholder="Yaşınız"
+              aria-label="Yaşınız"
+              id="yas"
+            />
+          </div>
+          <div class="col">
+            <label for="email">E mail iniz</label>
+            <input
+              type="email"
+              class="form-control"
+              placeholder="E mail"
+              aria-label="E mail"
+              id="email"
+            />
+          </div>
+          <div class="col">
+            <label for="dosya">Soyadınız</label>
+            <input type="file"" class="form-control" placeholder="Dosya"
+            aria-label="Last name" id="dosya" />
+          </div>
+        </fieldset>
+        <fieldset>
+          <legend>Diğer Bilgiler</legend>
+          <div class="col">
+            <label for="tarih">Sektöre Giriş Tarihiniz</label> <br />
+            <input
+              type="date"
+              class="form-control"
+              placeholder="Giriş Tarihi"
+              aria-label="Giriş Tarihi"
+              id="tarih"
+            />
+          </div>
+          <label for="giris">Sektöre Giriş Tarihiniz:</label>
+
+          <div class="form-check">
+            <input
+              class="form-check-input"
+              type="radio"
+              name="flexRadioDefault"
+              id="flexRadioDefault1"
+            />
+            <label class="form-check-label" for="flexRadioDefault1">
+              1-5 Yıl
+            </label>
+          </div>
+          <div class="form-check">
+            <input
+              class="form-check-input"
+              type="radio"
+              name="flexRadioDefault"
+              id="flexRadioDefault2"
+              checked
+            />
+            <label class="form-check-label" for="flexRadioDefault2">
+              6-10 Yıl
+            </label>
+          </div>
+          <div class="form-check">
+            <input
+              class="form-check-input"
+              type="radio"
+              name="flexRadioDefault"
+              id="flexRadioDefault3"
+              checked
+            />
+            <label class="form-check-label" for="flexRadioDefault3">
+              11-15 Yıl
+            </label>
+          </div>
+          <div class="form-check">
+            <input
+              class="form-check-input"
+              type="radio"
+              name="flexRadioDefault"
+              id="flexRadioDefault4"
+              checked
+            />
+            <label class="form-check-label" for="flexRadioDefault4">
+              16-20 Yıl
+            </label>
+          </div>
+          <label for="dil">Programlama Dilleri: </label>
+          <select class="form-select" aria-label="Default select example">
+            <option selected>Programlama Dili Seçin</option>
+            <option value="PHP">PHP</option>
+            <option value="Java">Java</option>
+            <option value="Javascript">Javascript</option>
+            <option value="C#">C#</option>
+          </select>
+        </fieldset>
+        <fieldset>
+          <legend>Sözleşme Kopyası</legend>
+          <textarea name="metin" id="metin" cols="30" rows="10">
+Lorem, ipsum dolor sit amet consectetur adipisicing elit. Expedita necessitatibus minima nisi pariatur, molestiae facilis numquam mollitia natus provident repellat libero neque velit. Minima facere odio fuga unde, impedit molestiae eaque quaerat et recusandae excepturi quae voluptatum labore magnam doloremque nam non obcaecati libero nisi quibusdam tempore vero necessitatibus laborum reprehenderit! Magnam iusto modi, recusandae quos nostrum maxime in doloremque officiis, pariatur beatae harum rerum sint totam? Porro, ab. Eligendi, illo tempora aperiam omnis velit corrupti accusantium dolor dolorum labore quis nobis laborum iure nihil voluptate vel. Veritatis eum ipsam explicabo cumque nostrum esse dolores! Officiis, reprehenderit praesentium. Molestias, nemo!</textarea
+          >
+        </fieldset>
+        <fieldset>
+          <legend>Mail Listesi</legend>
+          <input
+            class="form-check-input"
+            type="checkbox"
+            value=""
+            id="flexCheckDefault5"
+          />
+          <label class="form-check-label" for="flexCheckDefault5">
+            Mail Listesine Katılmak İstiyorum
+          </label>
+          <br />
+          <input
+            class="form-check-input"
+            type="checkbox"
+            value=""
+            id="flexCheckDefault6"
+          />
+          <label class="form-check-label" for="flexCheckDefault6">
+            Mail Listesine Katılmak İstemiyorum
+          </label>
+        </fieldset>
+
+        <input type="submit" value="Gönder" />
+      </form>
+    </div>
   </body>
 </html>
